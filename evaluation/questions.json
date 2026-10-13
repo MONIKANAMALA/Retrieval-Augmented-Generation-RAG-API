@@ -1,0 +1,142 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is the refund window for purchases?",
+    "expected_answer_facts": ["30 days"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q02",
+    "question": "How many days of annual leave do employees get?",
+    "expected_answer_facts": ["20 days"],
+    "expected_source_files": ["employee_handbook.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q03",
+    "question": "What is the weight of the AcmeWidget Pro X200?",
+    "expected_answer_facts": ["2.4 kg"],
+    "expected_source_files": ["product_manual.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q04",
+    "question": "How many days per week can employees work from home?",
+    "expected_answer_facts": ["3 days"],
+    "expected_source_files": ["employee_handbook.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q05",
+    "question": "What is the cost of expedited shipping?",
+    "expected_answer_facts": ["$12.99"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q06",
+    "question": "What does error code E-401 mean on the X200?",
+    "expected_answer_facts": ["sensor calibration failure"],
+    "expected_source_files": ["product_manual.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q07",
+    "question": "How long is the standard warranty period for the product?",
+    "expected_answer_facts": ["2-year", "2 years"],
+    "expected_source_files": ["product_manual.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q08",
+    "question": "What is the minimum order amount for free shipping and how long does standard shipping take?",
+    "expected_answer_facts": ["$75", "5-7 business days"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q09",
+    "question": "What are the core business hours for remote workers and what stipend is provided for home office setup?",
+    "expected_answer_facts": ["10:00 AM to 3:00 PM", "$500"],
+    "expected_source_files": ["employee_handbook.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q10",
+    "question": "What is the company's policy on cryptocurrency payments?",
+    "expected_answer_facts": [],
+    "expected_source_files": [],
+    "requires_abstention": true
+  },
+  {
+    "id": "Q11",
+    "question": "What is the company's maternity leave policy?",
+    "expected_answer_facts": [],
+    "expected_source_files": [],
+    "requires_abstention": true
+  },
+  {
+    "id": "Q12",
+    "question": "Can I return a product after 60 days and still get a full refund?",
+    "expected_answer_facts": ["30 days", "no refunds"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q13",
+    "question": "What is the maximum number of sick leave days and do they carry over?",
+    "expected_answer_facts": ["10 days", "does not carry over", "forfeited"],
+    "expected_source_files": ["employee_handbook.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q14",
+    "question": "What is the company's stock option plan for employees?",
+    "expected_answer_facts": [],
+    "expected_source_files": [],
+    "requires_abstention": true
+  },
+  {
+    "id": "Q15",
+    "question": "What connectivity options does the X200 support and what is the maximum power consumption?",
+    "expected_answer_facts": ["Wi-Fi 6", "Bluetooth 5.2", "45 watts"],
+    "expected_source_files": ["product_manual.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q16",
+    "question": "How often should the air intake filters be cleaned?",
+    "expected_answer_facts": ["every 3 months"],
+    "expected_source_files": ["product_manual.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q17",
+    "question": "What happens if an order is cancelled after it has been shipped?",
+    "expected_answer_facts": ["cannot be cancelled", "return and refund process"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q18",
+    "question": "What is the company 401(k) match percentage?",
+    "expected_answer_facts": ["4%"],
+    "expected_source_files": ["employee_handbook.md"],
+    "requires_abstention": false
+  },
+  {
+    "id": "Q19",
+    "question": "What is the company's policy on employee use of social media during work hours?",
+    "expected_answer_facts": [],
+    "expected_source_files": [],
+    "requires_abstention": true
+  },
+  {
+    "id": "Q20",
+    "question": "How long is the data retention period before inactive customer records are purged?",
+    "expected_answer_facts": ["24 months"],
+    "expected_source_files": ["company_policies.md"],
+    "requires_abstention": false
+  }
+]

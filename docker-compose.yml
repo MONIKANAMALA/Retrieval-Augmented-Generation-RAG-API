@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  rag-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY:-}
+      - MISTRAL_MODEL=${MISTRAL_MODEL:-mistral-small-latest}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      - CHROMA_PERSIST_DIRECTORY=/app/storage/chroma
+      - CHROMA_COLLECTION_NAME=${CHROMA_COLLECTION_NAME:-assessment_documents}
+      - CHUNK_SIZE=${CHUNK_SIZE:-800}
+      - CHUNK_OVERLAP=${CHUNK_OVERLAP:-120}
+      - DEFAULT_TOP_K=${DEFAULT_TOP_K:-5}
+      - MIN_RELEVANCE_SCORE=${MIN_RELEVANCE_SCORE:-1.2}
+      - MAX_UPLOAD_SIZE_MB=${MAX_UPLOAD_SIZE_MB:-10}
+      - LLM_TIMEOUT_SECONDS=${LLM_TIMEOUT_SECONDS:-30}
+      - APP_ENV=${APP_ENV:-production}
+    volumes:
+      - chroma_data:/app/storage/chroma
+    restart: unless-stopped
+
+volumes:
+  chroma_data:
+    driver: local
